@@ -12,7 +12,7 @@ set("n", "<leader>rr", function()
   local file = vim.fn.expand("%:p")
   local cmd
   if filetype == "python" then
-    cmd = 'echo "Running file: ' .. file .. '" && python3 ' .. file
+    cmd = 'echo "Running file: ' .. file .. '" && python3 ' .. vim.fn.shellescape(file)
   else
     print("Unsupported filetype: " .. filetype)
     return
