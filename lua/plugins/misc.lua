@@ -1,5 +1,5 @@
 return {
-  { "LudoPinelli/comment-box.nvim", verison = "*" },
+  { "LudoPinelli/comment-box.nvim", version = "*" },
   {
     "christopher-francisco/tmux-status.nvim",
     lazy = true,

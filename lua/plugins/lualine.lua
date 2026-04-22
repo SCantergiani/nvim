@@ -1,5 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
+  dependencies = { "christopher-francisco/tmux-status.nvim" },
   opts = function(_, opts)
     -- Add tmux windows to the middle section (lualine_c)
     table.insert(opts.sections.lualine_c, {
