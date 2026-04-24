@@ -3,8 +3,17 @@
 -- Add any additional options here
 
 -- LSP Server to use for Python.
--- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "ty"
--- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
 vim.g.python3_host_prog = "~/.venvs/neovim/bin/python"
+
+-- DVC lsp support
+vim.filetype.add({
+  filename = {
+    ["Dvcfile"] = "yaml",
+    ["dvc.lock"] = "yaml",
+  },
+  extension = {
+    dvc = "yaml",
+  },
+})
