@@ -8,21 +8,4 @@ return {
       },
     },
   },
-  {
-    "folke/snacks.nvim",
-    opts = {
-      scroll = {
-        enabled = false, -- Disable scrolling animations
-      },
-    },
-  },
-  {
-    "LazyVim/LazyVim", -- Diasable news alerts
-    opts = {
-      news = {
-        lazyvim = false,
-        neovim = false,
-      },
-    },
-  },
 }
