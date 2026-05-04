@@ -25,7 +25,7 @@ end, { desc = "Run current file in terminal" })
 -- +---------------------------------------------------------+
 -- |                    Gigachad comments                    |
 -- +---------------------------------------------------------+
-set({ "n", "v" }, "gcC", "<Cmd>CBllbox10<CR>", { desc = "Comment box", noremap = true, silent = true })
+set({ "n", "v" }, "gcb", "<Cmd>CBllbox10<CR>", { desc = "Comment box", noremap = true, silent = true })
 
 -- +---------------------------------------------------------+
 -- |                           DAP                           |
