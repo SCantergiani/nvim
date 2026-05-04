@@ -5,6 +5,9 @@
 -- Disable default statusbar
 vim.opt.laststatus = 0
 
+-- less lag in g panel
+vim.opt.timeoutlen = 0
+
 -- LSP Server to use for Python.
 vim.g.lazyvim_python_lsp = "ty"
 vim.g.lazyvim_python_ruff = "ruff"

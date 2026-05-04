@@ -25,7 +25,7 @@ end, { desc = "Run current file in terminal" })
 -- +---------------------------------------------------------+
 -- |                    Gigachad comments                    |
 -- +---------------------------------------------------------+
-set({ "n", "v" }, "gcb", "<Cmd>CBllbox10<CR>", { desc = "Comment box", noremap = true, silent = true })
+set({ "n", "v" }, "gcC", "<Cmd>CBllbox10<CR>", { desc = "Comment box", noremap = true, silent = true })
 
 -- +---------------------------------------------------------+
 -- |                           DAP                           |
@@ -50,7 +50,9 @@ end
 vim.api.nvim_create_autocmd("User", {
   pattern = "LazyLoad",
   callback = function(event)
-    if event.data ~= "nvim-dap" then return end
+    if event.data ~= "nvim-dap" then
+      return
+    end
     local dap = require("dap")
     dap.listeners.after.event_initialized["custom_keymaps"] = map_dbg_keys
     dap.listeners.after.event_terminated["custom_keymaps"] = unmap_dbg_keys
